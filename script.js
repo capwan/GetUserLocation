@@ -4,7 +4,7 @@ let locationDiv = document.getElementById
 ('location-details');
 
 locationButton.addEventListener('click', () => {
-    // Geolocation APU is used to get geographical
+    // Geolocation API is used to get geographical
     // position of a user and is available inside
     // the navigator object
     if(navigator.geolocation){
@@ -18,7 +18,7 @@ locationButton.addEventListener('click', () => {
     }
 });
 
-//Error Checks 
+// Error Checks 
 const checkError = (error) => {
     switch(error.code){
         case error.PERMISSION_DENIED:
@@ -34,7 +34,7 @@ const checkError = (error) => {
 };
 
 const showLocation = async(position) => {
-    // We user the nomination API for getting actual address from latitude and longitude 
+    // We use the nomination API for getting actual address from latitude and longitude 
     let response = await fetch(
     `https://nominatim.openstreetmap.org/reverse?lat=${position.coords.latitude}&lon=${position.coords.longitude}&format=json`
     );
