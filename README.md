@@ -9,4 +9,4 @@ Just open `index.html`.
 
 After that web-site will be give question about access to your location.Allow and script will be done
 
-*[Live Demo](https://capwan.github.io/GetUserLocation/)*
+**[Live Demo](https://capwan.github.io/GetUserLocation/)**
